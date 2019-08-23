@@ -46,7 +46,7 @@ std::wstring GetUserFolder() {
   char* dataHome = std::getenv("XDG_DATA_HOME");
 
   // if XDG_DATA_HOME not set, fallback to HOME directory
-  if (dataHome == NULL) {
+  if (dataHome == nullptr) {
     dataHome = std::getenv("HOME");
   } else {
     std::string home(dataHome);
@@ -54,12 +54,12 @@ std::wstring GetUserFolder() {
   }
 
   // if HOME not set, fall back to this
-  if (dataHome == NULL) {
+  if (dataHome == nullptr) {
     struct passwd pw1;
     struct passwd* pw;
-    char buf[4096];  // could potentionally lower this
+    char buf[4096];  // could potentially lower this
     getpwuid_r(getuid(), &pw1, buf, sizeof(buf), &pw);
-    assert(&pw1 == pw);  // sanity check
+    assert_true(&pw1 == pw);  // sanity check
     dataHome = pw->pw_dir;
   }
 
