@@ -64,7 +64,7 @@ std::wstring GetUserFolder() {
   }
 
   std::string home(dataHome);
-  return to_wstring(home + "/.local/share");
+  return xe::join_paths(to_wstring(home), L".local/share");
 }
 
 bool PathExists(const std::wstring& path) {
