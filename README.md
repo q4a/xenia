@@ -23,8 +23,8 @@ Discussing illegal activities will get you banned.
 
 Buildbot | Status
 -------- | ------
-[Windows](https://ci.appveyor.com/project/benvanik/xenia/branch/master) | [![Build status](https://ci.appveyor.com/api/projects/status/ftqiy86kdfawyx3a/branch/master?svg=true)](https://ci.appveyor.com/project/benvanik/xenia/branch/master)
-[Linux](https://travis-ci.org/xenia-project/xenia) | [![Build status](https://travis-ci.org/xenia-project/xenia.svg?branch=master)](https://travis-ci.org/xenia-project/xenia)
+[Windows](https://ci.appveyor.com/project/q4a/xenia/branch/linux-q4a) | [![Build status](https://ci.appveyor.com/api/projects/status/t9u35cuu4l0259e1/branch/linux-q4a?svg=true)](https://ci.appveyor.com/project/q4a/xenia/branch/linux-q4a)
+[Linux](https://travis-ci.org/q4a/xenia) | [![Build status](https://travis-ci.org/q4a/xenia.svg?branch=linux-q4a)](https://travis-ci.org/q4a/xenia)
 
 Quite a few real games run. Quite a few don't.
 See the [Game compatibility list](https://github.com/xenia-project/game-compatibility/issues)
@@ -62,7 +62,7 @@ that there are some major work areas still untouched:
 
 * Help work through [missing functionality/bugs in games](https://github.com/xenia-project/xenia/labels/compat)
 * Add input drivers for [DualShock4 (PS4) controllers](https://github.com/xenia-project/xenia/issues/60) (or anything else)
-* Skilled with Linux? A strong contributor is needed to [help with porting](https://github.com/xenia-project/xenia/labels/cross%20platform)
+* Skilled with Linux? A strong contributor is needed to [help with porting](https://github.com/xenia-project/xenia/issues/1430)
 
 See more projects [good for contributors](https://github.com/xenia-project/xenia/labels/good%20first%20issue). It's a good idea to ask on Discord and check the issues page before beginning work on
 something.
