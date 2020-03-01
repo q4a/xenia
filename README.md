@@ -11,6 +11,11 @@
 [![Azure Build Status](https://dev.azure.com/xenia-canary/xenia-canary/_apis/build/status/xenia-canary.xenia-canary?branchName=canary)](https://dev.azure.com/xenia-canary/xenia-canary/_build/latest?definitionId=1&branchName=canary)
 <!--[![Travis Build Status](https://travis-ci.org/xenia-canary/xenia-canary.svg?branch=canary)](https://travis-ci.org/xenia-canary/xenia-canary)-->
 
+Buildbot | Status
+-------- | ------
+[Windows](https://ci.appveyor.com/project/q4a/xenia/branch/canary-q4a) | [![Build status](https://ci.appveyor.com/api/projects/status/t9u35cuu4l0259e1/branch/canary-q4a?svg=true)](https://ci.appveyor.com/project/q4a/xenia/branch/canary-q4a)
+[Linux](https://travis-ci.org/q4a/xenia/branches) | [![Build status](https://travis-ci.org/q4a/xenia.svg?branch=canary-q4a)](https://travis-ci.org/q4a/xenia/branches)
+
 Xenia Canary is an experimental fork of Xenia. For more information, see the
 [wiki](https://github.com/xenia-canary/xenia-canary/wiki).
 
