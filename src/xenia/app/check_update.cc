@@ -7,6 +7,7 @@
  ******************************************************************************
  */
 
+#if XE_PLATFORM_WIN32
 #include "xenia/app/check_update.h"
 #include "xenia/base/logging.h"
 #include "xenia/base/platform_win.h"
@@ -200,3 +201,4 @@ namespace update {
   }
 }  // namespace update
 }  // namespace xe
+#endif  // XE_PLATFORM_WIN32

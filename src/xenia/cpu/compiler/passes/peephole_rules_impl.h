@@ -549,7 +549,7 @@ void dump_opts() {
       "sequences.\nShortened %ld assignment chains\nOptimized %ld signbit "
       "rotate lefts.\nOptimized %ld rol bitextracts.\nConverted %ld shift "
       "sequences to bitmasks.\n Optimized %ld redundant local loads.",
-#endif
+#endif  // XE_PLATFORM_WIN32
       n_cvt_opts, n_vec_shift_opts, n_useless_ctx_store_opts,
       n_replaced_assignments, n_replaced_loads, n_and1s_optimized, n_trunc_exts,
       n_eliminated_unused_conversion_results, n_useless_operations,
