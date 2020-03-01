@@ -7,6 +7,8 @@
  ******************************************************************************
  */
 
+#include "xenia/base/platform.h"
+
 #if XE_PLATFORM_WIN32
 #include "xenia/app/check_update.h"
 #include "xenia/base/logging.h"
