@@ -1,6 +1,6 @@
 #pragma once
 
-static size_t n_cvt_opts = 0, n_vec_shift_opts = 0,
+static unsigned long long n_cvt_opts = 0, n_vec_shift_opts = 0,
               n_useless_ctx_store_opts = 0;
 
 static bool do_cvt_opt(HIRBuilder* builder, Block* block) {
@@ -526,16 +526,16 @@ void dump_opts() {
   fprintf(
       lel,
       "Optimized %lld converts\nOptimized %lld vector shifts\nOptimized %lld "
-      "context stores\nOptimized away %lld useless assignments\nOptimized "
+      "context stores\nOptimized away %lu useless assignments\nOptimized "
       "away "
-      "%lld redundant loads."
-      "\nOptimized away %lld and 1 instructions\nOptimized away %lld useless "
-      "truncate-extends\nEliminated %lld unused operation "
-      "results.\nOptimized away %lld no-op operations.\nLowered %lld left "
-      "rotates to left shifts.\nRemoved %lld useless rlwinm rotate-or "
-      "sequences.\nShortened %lld assignment chains\nOptimized %lld signbit "
-      "rotate lefts.\nOptimized %lld rol bitextracts.\nConverted %lld shift "
-      "sequences to bitmasks.\n Optimized %lld redundant local loads.",
+      "%lu redundant loads."
+      "\nOptimized away %lu and 1 instructions\nOptimized away %lu useless "
+      "truncate-extends\nEliminated %lu unused operation "
+      "results.\nOptimized away %lu no-op operations.\nLowered %lu left "
+      "rotates to left shifts.\nRemoved %lu useless rlwinm rotate-or "
+      "sequences.\nShortened %lu assignment chains\nOptimized %lu signbit "
+      "rotate lefts.\nOptimized %lu rol bitextracts.\nConverted %lu shift "
+      "sequences to bitmasks.\n Optimized %lu redundant local loads.",
       n_cvt_opts, n_vec_shift_opts, n_useless_ctx_store_opts,
       n_replaced_assignments, n_replaced_loads, n_and1s_optimized, n_trunc_exts,
       n_eliminated_unused_conversion_results, n_useless_operations,
