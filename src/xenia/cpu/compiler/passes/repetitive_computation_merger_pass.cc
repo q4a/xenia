@@ -1,7 +1,7 @@
 #include "repetitive_computation_merger_pass.h"
 #include <bitset>
 #include "xenia/cpu/ppc/ppc_context.h"
-#if not XE_PLATFORM_WIN32
+#if !XE_PLATFORM_WIN32
 #include <climits>
 #endif
 

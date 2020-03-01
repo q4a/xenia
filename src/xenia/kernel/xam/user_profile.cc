@@ -21,9 +21,6 @@
 #include "xenia/kernel/util/crypto_utils.h"
 #include "xenia/kernel/util/shim_utils.h"
 #include "xenia/vfs/devices/host_path_device.h"
-//#if not XE_PLATFORM_WIN32
-//#include <stdio_s.h>
-//#endif
 
 DECLARE_int32(license_mask);
 

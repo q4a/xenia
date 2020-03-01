@@ -52,11 +52,11 @@ enum class XTileType {
 };
 
 // TODO: find filenames of other tile types that are stored in profile
-static const std::map<XTileType, std::string> kTileFileNames = {
-    {XTileType::kPersonalGamerTile, "tile_64.png"},
-    {XTileType::kPersonalGamerTileSmall, "tile_32.png"},
-    {XTileType::kAvatarGamerTile, "avtr_64.png"},
-    {XTileType::kAvatarGamerTileSmall, "avtr_32.png"},
+static const std::map<XTileType, const wchar_t*> kTileFileNames = {
+    {XTileType::kPersonalGamerTile, L"tile_64.png"},
+    {XTileType::kPersonalGamerTileSmall, L"tile_32.png"},
+    {XTileType::kAvatarGamerTile, L"avtr_64.png"},
+    {XTileType::kAvatarGamerTileSmall, L"avtr_32.png"},
 };
 
 // from https://github.com/xemio/testdev/blob/master/xkelib/xam/_xamext.h
