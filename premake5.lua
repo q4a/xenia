@@ -103,7 +103,7 @@ filter("platforms:Linux")
     "rt",
   })
   linkoptions({
-    "-v `pkg-config --libs gtk+-3.0`",
+    "`pkg-config --libs gtk+-3.0`",
   })
 
 filter({"platforms:Linux", "kind:*App"})
