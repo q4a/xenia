@@ -4,7 +4,6 @@ language: cpp
 os:
   - linux
 
-sudo: required
 dist: bionic
 addons:
   apt:
@@ -29,7 +28,6 @@ addons:
 matrix:
   include:
     #- env: C_COMPILER=clang-7 CXX_COMPILER=clang++-7 LINT=true
-      sudo: false
     - env: C_COMPILER=clang-7 CXX_COMPILER=clang++-7 BUILD=true CONFIG=Debug
     - env: C_COMPILER=clang-7 CXX_COMPILER=clang++-7 BUILD=true CONFIG=Release
 
