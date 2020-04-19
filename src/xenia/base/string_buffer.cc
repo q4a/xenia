@@ -68,11 +68,14 @@ void StringBuffer::Append(const std::string_view value) {
 }
 
 void StringBuffer::AppendVarargs(const char* format, va_list args) {
+  va_list size_args;
+  va_copy(size_args, args);  // arg is indeterminate after the return so copy it
   int result = vsnprintf(nullptr, 0, format, args);
   if (result <= 0) {
     return;
   }
   auto length = static_cast<size_t>(result);
+  va_end(size_args);
   Grow(length + 1);
   vsnprintf(buffer_ + buffer_offset_, buffer_capacity_, format, args);
   buffer_offset_ += length;
